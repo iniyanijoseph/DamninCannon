@@ -1,0 +1,10 @@
+extends Node2D
+
+
+
+func _process(delta):
+	$RichTextLabel2.text = "HS:" + str(NewScript.hscore)
+
+
+func _on_TextureButton_pressed():
+	get_tree().change_scene("res://Game.tscn")
